@@ -49,13 +49,6 @@ background token-refresh job is required.
 A revoked refresh token or other non-recoverable token error requires a new
 Sonos login. Transient outages do not by themselves mean credentials expired.
 
-Version 0.1.0 had a reauthentication bug: native MCP can start reauth with
-only an `auth_header` after HTTP 401, but the custom flow expected a
-`client_id` in that payload. This raised `KeyError: 'client_id'` instead of
-opening the recovery flow. Version 0.1.1 reads the persisted entry instead.
-This fixes recovery after 401; it does not establish that every reported
-"unavailable" state is caused by OAuth.
-
 For an outage, check **Settings → Devices & services → Sonos MCP** and HA's
 logs. Record the exact time, integration state, exception type and whether
 the same read-only command works after retrying. A regular Sonos speaker
