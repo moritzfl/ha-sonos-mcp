@@ -1,0 +1,11 @@
+{
+  "domain": "sonos_mcp",
+  "name": "Sonos MCP",
+  "version": "0.1.1",
+  "config_flow": true,
+  "dependencies": ["mcp"],
+  "documentation": "https://support.sonos.com/en-us/article/control-your-sonos-system-with-ai-using-sonos-27mcp",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "codeowners": []
+}

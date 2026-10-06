@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.smoke-config/
+.pytest_cache/
+.DS_Store
+.idea/
+dist/
+output/
+.playwright-cli/
+.env
+.env.*
+.storage/
+secrets.yaml
+*.zip

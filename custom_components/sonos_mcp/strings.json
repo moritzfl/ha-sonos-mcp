@@ -1,0 +1,23 @@
+{
+  "title": "Sonos MCP",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Sonos MCP",
+        "description": "Connect the official Sonos MCP server. Home Assistant registers an OAuth public client automatically; no client secret is needed. Continue, then sign in to Sonos and review the requested permissions. Setup only loads the tool list; it does not start playback or change speakers."
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Sonos MCP",
+        "description": "Sign in to Sonos again to restore access to the existing connection."
+      }
+    },
+    "error": {
+      "cannot_register": "Could not register the OAuth client with Sonos. Check internet access and try again."
+    },
+    "abort": {
+      "already_configured": "Sonos MCP is already configured.",
+      "cannot_connect": "Authorization completed, but Home Assistant could not connect to the Sonos MCP server.",
+      "reauth_successful": "Sonos MCP was reconnected successfully."
+    }
+  }
+}
